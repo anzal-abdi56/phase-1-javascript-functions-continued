@@ -39,7 +39,7 @@ describe("index.js", () => {
     });
 
     it("when initialized with '||' creates a function that, when called, wraps an adjective in a highlight", function() {
-      let result = wrapAdjective("||")
+      let result = wrapAdjective( "||")
       let emphatic = result("a dedicated programmer")
       expect(emphatic).to.equal("You are ||a dedicated programmer||!")
     });
